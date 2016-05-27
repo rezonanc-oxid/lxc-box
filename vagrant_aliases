@@ -1,0 +1,14 @@
+#!/bin/bash
+
+alias vssh='vagrant ssh'
+alias vgl='vagrant global-status'
+alias vup='vagrant up'
+alias vupp='vagrant up --provider=parallels'
+alias vupv='vagrant up --provider=virtualbox'
+alias vupl='vagrant up --provider=lxc'
+alias vpro='vagrant provision'
+alias vdes='vagrant destroy -f'
+alias vstat='vagrant status'
+alias vpros='vagrant provision --provision-with=shell'
+alias vha='vagrant halt'
+alias vre='vagrant reload'
