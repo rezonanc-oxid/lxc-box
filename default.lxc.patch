@@ -1,0 +1,7 @@
+--- default.lxc	2016-11-17 23:08:07.000000000 +0200
++++ default.lxc.new	2016-11-17 23:08:02.000000000 +0200
+@@ -26,3 +26,4 @@
+ USE_LXC_BRIDGE="false"  # overridden in lxc-net
+ 
+ [ ! -f /etc/default/lxc-net ] || . /etc/default/lxc-net
++LXC_DHCP_CONFILE=/etc/lxc/dnsmasq.conf

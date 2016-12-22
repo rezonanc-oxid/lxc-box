@@ -1,7 +1,7 @@
 Vagrant.configure("2") do |config|
  [:up, :halt, :destroy, :reload].each do |command|
     config.trigger.after command do
-      run "sudo service dnsmasq reload"
+      run "sudo killall dnsmasq -HUP"
     end
   end
 end
