@@ -10,7 +10,7 @@ if File.file?(global_personal_yaml_fn)
 end
 
 Vagrant.configure(2) do |config|
-  config.vm.box = "ubuntu/box/parallels/ubuntu1604-nocm-0.1.0.box"
+  config.vm.box = "ubuntu/box/parallels/ubuntu1604-0.1.0.box"
 
   config.vm.network "private_network", ip: "192.168.33.10"
 
