@@ -14,10 +14,6 @@ Vagrant.configure(2) do |config|
 
   config.vm.network "private_network", ip: "192.168.33.10"
 
-  config.vm.synced_folder "../lxc/", "/volume", type: "nfs"
-  config.nfs.map_uid = Process.uid
-  config.nfs.map_gid = Process.gid
-
   config.vm.provider :parallels do |v|
     v.name = 'lxc'
     v.memory = '8192'
