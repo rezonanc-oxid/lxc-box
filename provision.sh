@@ -31,5 +31,5 @@ sudo cp /vagrant/lxc-dnsmasq.conf /etc/lxc/dnsmasq.conf
 sudo service lxc-net restart
 
 sudo mkdir -p /volume
-sudo bash -c "echo 192.168.33.2:/Users/oxid/vms/lxc /volume nfs rw,relatime,vers=3,rsize=8192,wsize=8192,namlen=255,hard,proto=udp,timeo=11,retrans=3,sec=sys,mountaddr=192.168.33.2,mountvers=3,mountproto=udp,local_lock=none,addr=192.168.33.2 0 2 >> /etc/fstab"
+sudo bash -c "echo 192.168.33.1:/Users/oxid/vms/lxc /volume nfs rw,relatime,vers=3,rsize=8192,wsize=8192,namlen=255,hard,proto=udp,timeo=11,retrans=3,sec=sys,mountaddr=192.168.33.1,mountvers=3,mountproto=udp,local_lock=none,addr=192.168.33.1 0 2 >> /etc/fstab"
 sudo mount -a
